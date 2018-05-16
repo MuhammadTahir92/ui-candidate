@@ -4,7 +4,7 @@ import { Page } from "ui/page";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
+  styleUrls: [],
   moduleId:module.id
 })
 export class LoginComponent implements OnInit {

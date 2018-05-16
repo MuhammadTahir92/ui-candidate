@@ -1,0 +1,43 @@
+<ActionBar title="Home" class="action-bar">
+</ActionBar>
+<StackLayout backgroundColor="#f3f3f3">
+	<GridLayout rows="*,5*" columns="*" class="marginPage">
+		<StackLayout>
+			<Image src="res://logo" width="164" height="90" verticalAlignment="middle"
+			 horizontalAlignment="center"></Image>
+		</StackLayout>
+		<GridLayout row="1" rows="*" columns="*" style="margin-top:7%;">
+			<StackLayout>
+				<TextField [(ngModel)]="textFieldValue" hint="Email Address" style="margin-bottom:15;placeholder-color:rgb(89, 89, 89);placeholder-font-weight:bold"
+				 class="textField"></TextField>
+				<TextField [(ngModel)]="textFieldValue" hint="Password" class="textField" style=" placeholder-color:rgb(89, 89, 89);placeholder-font-weight:bold"></TextField>
+				<Label text="Forget password" class="forgetPassword" style="margin-bottom:30; margin-top:10;" ;></Label>
+				<Button text="Login" (tap)="onButtonTap()" class="sizebtn" style="background-color: #232b41; height:45;"></Button>
+				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:6%; ">
+					<StackLayout col="0" class="line"></StackLayout>
+					<Label col="1" text="OR LOGIN WITH SOCIAL" class="socialMedia"></Label>
+					<StackLayout col="2" class="line"></StackLayout>
+				</GridLayout>
+				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:6%;">
+					<Button col="0" class="google sizebtn">
+							<FormattedString>
+								<Span text=""  fontSize="35"></Span>
+								<Span text="Google"></Span>
+							</FormattedString>
+						</Button>
+					<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
+					<Button col="2" class="facebook sizebtn">
+							<FormattedString>
+								<Span text=""  fontSize="35"></Span>
+								<Span text="Facebook"></Span>
+							</FormattedString>
+						</Button>
+				</GridLayout>
+			</StackLayout>
+			<StackLayout  horizontalAlignment="center"verticalAlignment="bottom" orientation="horizontal" class="text-center">
+				<Label text="Don't have an account? "></Label>
+				<Label text="SIGN UP" fontWeight="Bold" class="signUP"></Label>
+			</StackLayout>
+		</GridLayout>
+	</GridLayout>
+</StackLayout>

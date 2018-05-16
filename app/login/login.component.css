@@ -1,0 +1,62 @@
+.marginPage
+{
+    margin-left: 10%;   
+    margin-right: 10%;   
+    margin-top: 7%;   
+    margin-bottom: 5%;  
+
+}
+
+.forgetPassword
+{
+    color: #909090;
+    text-align: right;
+    padding-top: 4%;
+    font-size: 12;
+    font-weight: 500;
+}
+.socialMedia
+{
+    color: #909090;
+    text-align: center;
+    margin-left: 2;
+    margin-right: 2;
+    font-size: 12;
+}
+
+.sizebtn
+{
+    border-radius: 40%;
+    color: white;
+}
+
+.google
+{
+    background-color: #dc4e41;
+    font-size: 12;
+}
+.facebook
+{
+    background-color: #2553b4;
+    font-size: 12;
+}
+
+.line
+{
+    background-color: #909090;
+    height: 1;
+
+}
+
+.signUP
+{
+    color:#232b41; 
+    border-bottom-width: 1;
+    border-bottom-color:#232b41;
+}
+
+.textField
+{
+    border-bottom-color:#909090; border-bottom-width:1;
+    
+}

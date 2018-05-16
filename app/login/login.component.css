@@ -24,21 +24,33 @@
     font-size: 12;
 }
 
-.sizebtn
+.sizeBtn
 {
     border-radius: 40%;
     color: white;
+    height:30%;
+    width:45%;
+}
+
+.loginBtn
+{
+    border-radius: 40%;
+    color: white;
+    height:35%;
+    width:100%;
 }
 
 .google
 {
     background-color: #dc4e41;
     font-size: 12;
+    border-radius: 40%;
 }
 .facebook
 {
     background-color: #2553b4;
     font-size: 12;
+    border-radius: 40%;
 }
 
 .line
@@ -58,5 +70,7 @@
 .textField
 {
     border-bottom-color:#909090; border-bottom-width:1;
+    placeholder-color:rgb(89, 89, 89); 
+    placeholder-font-weight:bold;
     
 }

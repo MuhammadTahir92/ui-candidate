@@ -18,7 +18,7 @@
 	@include small-text(500, 13, right);
 }
 .social-media-text {
-	@include small-text(400, 14, center);
+	@include small-text(400, 13, center);
 }
 .signup-text {
 	@include small-text(500, 14, center);
@@ -30,9 +30,9 @@
 	color: $white;
 }
 
-.loginButton { @include round-button($button-border-radius, $color_ebony_clay_approx); }
-.googleButton { @include round-button($button-border-radius, $color_valencia_approx); }
-.facebookButton { @include round-button($button-border-radius, $color_cerulean_blue_approx); }
+.login-button { @include round-button($button-border-radius, $color_ebony_clay_approx); }
+.google-button { @include round-button($button-border-radius, $color_valencia_approx); }
+.facebook-button { @include round-button($button-border-radius, $color_cerulean_blue_approx); }
 
 .line {
 	background-color: $color_mountain_mist_approx;

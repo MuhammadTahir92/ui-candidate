@@ -11,6 +11,7 @@ import { LoginComponent } from "~/login/login.component";
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 // import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { SignupComponent } from './signup/signup.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
 @NgModule({
     bootstrap: [
@@ -23,7 +24,8 @@ import { SignupComponent } from './signup/signup.component';
     declarations: [
         AppComponent,
         LoginComponent,
-        SignupComponent
+        SignupComponent,
+    ForgetPasswordComponent
 ],
     providers: [
     ],

@@ -1,40 +1,39 @@
 <StackLayout backgroundColor="#F3F3F3">
-	<GridLayout rows="*,5*" columns="*" class="margin-page">
+	<GridLayout rows="*,5*,40%" columns="*" class="margin-page">
 		<StackLayout>
-			<Image src="res://logogoat" ></Image>
+			<Image src="res://logogoat" width="140%" height="140%"></Image>
 		</StackLayout>
-		<GridLayout row="1" rows="*" columns="*" style="margin-top:7%;">
+		<GridLayout row="1" rows="*" columns="*" style="margin-top:12%;">
 			<StackLayout>
-				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:3%;" ios:style="margin-bottom:5%;"></TextField>
+				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:3%;"
+				 ios:style="margin-bottom:5%;"></TextField>
 				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom"></TextField>
-				<Label text="Forget password" class="forget-password-text" style="margin-top:3%;"  ></Label>
-					
-				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%;" ios:style="margin-top:8.6%; height: 10%;"   ></Button>
-				
+				<Label text="Forget password" class="forget-password-text" [nsRouterLink]="['/forget']" pageTransition="SlideRight" style="margin-top:3%;"></Label>
+				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%;" ios:style="margin-top:8.6%; height: 10%;"></Button>
 				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:4.5%; margin-bottom:4.5% ">
 					<StackLayout col="0" class="line"></StackLayout>
 					<Label col="1" text="OR LOGIN WITH SOCIAL" class="social-media-text" style="margin-left: 2; margin-right: 2"></Label>
 					<StackLayout col="2" class="line"></StackLayout>
 				</GridLayout>
 				<GridLayout columns="*,auto,*" rows="auto">
-					
-						<Button col="0" class="google-button" ios:style="height: 20%;" >
-							<FormattedString>
-								<Span text="Google"></Span>
-							</FormattedString>
-						</Button>
-						<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
-						<Button col="2" class="facebook-button" ios:style="height: 20%;">
-							<FormattedString>
-								<Span text="Facebook"></Span>
-							</FormattedString>
-						</Button>
+					<Button col="0" class="google-button" ios:style="height: 20%;">
+						<FormattedString>
+							<Span text="Google"></Span>
+						</FormattedString>
+					</Button>
+					<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
+					<Button col="2" class="facebook-button" ios:style="height: 20%;">
+						<FormattedString>
+							<Span text="Facebook"></Span>
+						</FormattedString>
+					</Button>
 				</GridLayout>
 			</StackLayout>
-			<StackLayout horizontalAlignment="center" verticalAlignment="bottom" orientation="horizontal" class="text-center">
-				<Label text="Don't have an account? " class="signup-text"></Label>
-				<Label text="SIGN UP" fontWeight="Bold" [nsRouterLink]="['/signup']"  pageTransition="fade" class="signup-link"></Label>
-			</StackLayout>
 		</GridLayout>
+		<StackLayout row="2" style="min-height: 70%;"  horizontalAlignment="center" verticalAlignment="bottom"
+		 orientation="horizontal" class="text-center">
+			<Label text="Have an account? " verticalAlignment="bottom" class="signup-text"></Label>
+			<Label text="SIGN IN" fontWeight="Bold" verticalAlignment="bottom" [nsRouterLink]="['/signup']" pageTransition="fade" class="signup-link"></Label>
+		</StackLayout>
 	</GridLayout>
 </StackLayout>

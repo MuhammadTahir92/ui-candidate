@@ -1,12 +1,12 @@
-<StackLayout backgroundColor="#f3f3f3">
+<StackLayout backgroundColor="#F3F3F3">
 	<GridLayout rows="*,5*" columns="*" class="margin-page">
 		<StackLayout>
 			<Image src="res://logohair" width="164" height="90" verticalAlignment="middle" horizontalAlignment="center"></Image>
 		</StackLayout>
 		<GridLayout row="1" rows="*" columns="*" style="margin-top:7%;">
 			<StackLayout>
-				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field" style="margin-bottom:15; placeholder-font-size:10;"></TextField>
-				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field"></TextField>
+				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" style="margin-bottom:15; placeholder-font-size:10;"></TextField>
+				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom"></TextField>
 				<Label text="Forget password" class="forget-password-text" style="margin-bottom:30; margin-top:10;" ></Label>
 				<Button text="Login" (tap)="onButtonTap()" class="loginButton" ></Button>
 				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:6%; ">

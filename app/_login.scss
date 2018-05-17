@@ -6,6 +6,8 @@
 	margin-top: 7%;
 	margin-bottom: 5%;
 }
+
+
 .forgetPassword {
 	color: $color_mountain_mist_approx;
 	text-align: right;
@@ -13,6 +15,11 @@
 	font-size: 12;
 	font-weight: 500;
 }
+
+@mixin round-button($radius) {
+			border-radius: $radius;
+  }
+
 .socialMedia {
 	color: $color_mountain_mist_approx;
 	text-align: center;
@@ -20,12 +27,14 @@
 	margin-right: 2;
 	font-size: 12;
 }
+
+
+
 .sizeBtn {
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	border-radius: 40%;
 	color: $white;
-	height: 30%;
-	width: 45%;
+	// height: 30%;
 }
 .loginBtn {
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)

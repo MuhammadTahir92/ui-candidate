@@ -13,3 +13,12 @@ refer to http://docs.nativescript.org/ui/theme.
 .mdiBottomBarIcons {
     font-family: "Material Icons", "MaterialIcons-Regular";
   }
+
+  .icomoon
+  {
+    font-family: "icomoon";
+  }
+
+  .font-awesome {
+    font-family: "FontAwesome";
+}

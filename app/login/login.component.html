@@ -1,14 +1,12 @@
-
 <StackLayout backgroundColor="#f3f3f3">
 	<GridLayout rows="*,5*" columns="*" class="marginPage">
 		<StackLayout>
-			<Image src="res://logohair" width="164" height="90" verticalAlignment="middle"
-			 horizontalAlignment="center"></Image>
+			<Image src="res://logohair" width="164" height="90" verticalAlignment="middle" horizontalAlignment="center"></Image>
 		</StackLayout>
 		<GridLayout row="1" rows="*" columns="*" style="margin-top:7%;">
 			<StackLayout>
-				<TextField [(ngModel)]="textFieldValue" hint="Email Address"  class="textField" style="margin-bottom:15; placeholder-font-size:10;"></TextField>
-				<TextField [(ngModel)]="textFieldValue" hint="Password" class="textField" ></TextField>
+				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="textField" style="margin-bottom:15; placeholder-font-size:10;"></TextField>
+				<TextField [(ngModel)]="textFieldValue" hint="Password" class="textField"></TextField>
 				<Label text="Forget password" class="forgetPassword" style="margin-bottom:30; margin-top:10;" ;></Label>
 				<Button text="Login" (tap)="onButtonTap()" class="loginBtn" style="background-color: #232b41; height:45;"></Button>
 				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:6%; ">
@@ -17,24 +15,23 @@
 					<StackLayout col="2" class="line"></StackLayout>
 				</GridLayout>
 				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:4%;">
-					<Button col="0" class="btn btn-primary btn-rounded-lg google  sizeBtn" >
-							<FormattedString>
-								<Span text="&#xE5CD;" class="mdiBottomBarIcons" ></Span>
-								<Span text="Google"></Span>
-							</FormattedString>
-						</Button>
+					<Button col="0" class="google  sizeBtn">
+						<FormattedString>
+							<!-- <Span text="&#xf1e0;" class="font-awesome"></Span> -->
+							<Span text="Google"></Span>
+						</FormattedString>
+					</Button>
 					<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
-					<Button col="2" class="btn btn-primary btn-rounded-lg facebook sizeBtn" >
-							<FormattedString>
-									<Span text="&#xE5CD;" class="mdiBottomBarIcons" ></Span>
-								
-								<Span text="Facebook"></Span>
-							</FormattedString>
-						</Button>
+					<Button col="2" class="facebook sizeBtn">
+						<FormattedString>
+							<!-- <Span text="&#xE5CD;" class="mdiBottomBarIcons"></Span> -->
+							<Span text="Facebook"></Span>
+						</FormattedString>
+					</Button>
 				</GridLayout>
 			</StackLayout>
-			<StackLayout  horizontalAlignment="center" verticalAlignment="bottom" orientation="horizontal" class="text-center">
-				<Label text="Don't have an account? "></Label>
+			<StackLayout horizontalAlignment="center" verticalAlignment="bottom" orientation="horizontal" class="text-center">
+				<Label text="Don't have an account? " class=""></Label>
 				<Label text="SIGN UP" fontWeight="Bold" class="signUP"></Label>
 			</StackLayout>
 		</GridLayout>

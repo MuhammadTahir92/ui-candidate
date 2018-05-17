@@ -1,0 +1,37 @@
+<StackLayout backgroundColor="#F3F3F3">
+    <GridLayout rows="*,5*" columns="*" class="margin-page">
+      <StackLayout>
+        <Image src="res://logohair" width="164" height="90" verticalAlignment="middle" horizontalAlignment="center"></Image>
+      </StackLayout>
+      <GridLayout row="1" rows="*" columns="*" style="margin-top:7%;">
+        <StackLayout>
+          <TextField [(ngModel)]="textFieldValue" hint="Name" class="text-field-custom" android:style="margin-bottom:3%;" ios:style="margin-bottom:5%;"></TextField>
+          <TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:3%;" ios:style="margin-bottom:5%;"></TextField>
+          <TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom" android:style="margin-bottom:1%;" ios:style="margin-bottom:3%;"></TextField>
+          <Button text="CREATE NEW ACCOUNT" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%;" ios:style="margin-top:8.6%; height: 10%;"   ></Button>
+          <GridLayout columns="*,auto,*" rows="auto" style="margin-top:4.5%; margin-bottom:4.5% ">
+            <StackLayout col="0" class="line"></StackLayout>
+            <Label col="1" text="OR SIGN UP WITH SOCIAL" class="social-media-text" style="margin-left: 2; margin-right: 2"></Label>
+            <StackLayout col="2" class="line"></StackLayout>
+          </GridLayout>
+          <GridLayout columns="*,auto,*" rows="auto" >
+              <Button col="0" class="google-button" ios:style="height: 20%;" >
+                  <FormattedString>
+                    <Span text="Google"></Span>
+                  </FormattedString>
+                </Button>
+                <StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
+                <Button col="2" class="facebook-button" ios:style="height: 20%;">
+                  <FormattedString>
+                    <Span text="Facebook"></Span>
+                  </FormattedString>
+                </Button>
+          </GridLayout>
+        </StackLayout>
+        <StackLayout horizontalAlignment="center" verticalAlignment="bottom" orientation="horizontal" class="text-center">
+          <Label text="Have an account? " class="signup-text"></Label>
+          <Label text="LOGIN" fontWeight="Bold" [nsRouterLink]="['/login']"  pageTransition="fade" class="signup-link"></Label>
+        </StackLayout>
+      </GridLayout>
+    </GridLayout>
+  </StackLayout>

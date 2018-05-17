@@ -5,34 +5,35 @@
 		</StackLayout>
 		<GridLayout row="1" rows="*" columns="*" style="margin-top:7%;">
 			<StackLayout>
-				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" style="margin-bottom:15; placeholder-font-size:10;"></TextField>
+				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:3%;" ios:style="margin-bottom:5%;"></TextField>
 				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom"></TextField>
-				<Label text="Forget password" class="forget-password-text" style="margin-bottom:30; margin-top:10;" ></Label>
-				<Button text="Login" (tap)="onButtonTap()" class="loginButton" ></Button>
-				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:6%; ">
+				<Label text="Forget password" class="forget-password-text" style="margin-top:3%;"  ></Label>
+					
+				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%;" ios:style="margin-top:8.6%; height: 10%;"   ></Button>
+				
+				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:4.5%; margin-bottom:4.5% ">
 					<StackLayout col="0" class="line"></StackLayout>
 					<Label col="1" text="OR LOGIN WITH SOCIAL" class="social-media-text" style="margin-left: 2; margin-right: 2"></Label>
 					<StackLayout col="2" class="line"></StackLayout>
 				</GridLayout>
-				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:4%;">
-					<Button col="0" class="googleButton">
-						<FormattedString>
-							<!-- <Span text="&#xf1e0;" class="font-awesome"></Span> -->
-							<Span text="Google"></Span>
-						</FormattedString>
-					</Button>
-					<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
-					<Button col="2" class="facebookButton">
-						<FormattedString>
-							<!-- <Span text="&#xE5CD;" class="mdiBottomBarIcons"></Span> -->
-							<Span text="Facebook"></Span>
-						</FormattedString>
-					</Button>
+				<GridLayout columns="*,auto,*" rows="auto">
+					
+						<Button col="0" class="google-button" ios:style="height: 20%;" >
+							<FormattedString>
+								<Span text="Google"></Span>
+							</FormattedString>
+						</Button>
+						<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
+						<Button col="2" class="facebook-button" ios:style="height: 20%;">
+							<FormattedString>
+								<Span text="Facebook"></Span>
+							</FormattedString>
+						</Button>
 				</GridLayout>
 			</StackLayout>
 			<StackLayout horizontalAlignment="center" verticalAlignment="bottom" orientation="horizontal" class="text-center">
 				<Label text="Don't have an account? " class="signup-text"></Label>
-				<Label text="SIGN UP" fontWeight="Bold" class="signup-link"></Label>
+				<Label text="SIGN UP" fontWeight="Bold" [nsRouterLink]="['/signup']"  pageTransition="fade" class="signup-link"></Label>
 			</StackLayout>
 		</GridLayout>
 	</GridLayout>

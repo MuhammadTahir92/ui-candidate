@@ -5,9 +5,9 @@
       </StackLayout>
       <GridLayout row="1" rows="*" columns="*" style="margin-top:7%;">
         <StackLayout>
-          <TextField [(ngModel)]="textFieldValue" hint="Name" class="text-field-custom" style="margin-bottom:3%;"></TextField>
-          <TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" style="margin-bottom:3%;"></TextField>
-          <TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom" style="margin-bottom:1%;"></TextField>
+          <TextField [(ngModel)]="textFieldValue" hint="Name" class="text-field-custom" android:style="margin-bottom:3%;" ios:style="margin-bottom:5%;"></TextField>
+          <TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:3%;" ios:style="margin-bottom:5%;"></TextField>
+          <TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom" android:style="margin-bottom:1%;" ios:style="margin-bottom:3%;"></TextField>
           <Button text="CREATE NEW ACCOUNT" (tap)="onButtonTap()" class="login-button" style="margin-top:8.6%"></Button>
           <GridLayout columns="*,auto,*" rows="auto" style="margin-top:4.5%; margin-bottom:4.5% ">
             <StackLayout col="0" class="line"></StackLayout>
@@ -15,19 +15,17 @@
             <StackLayout col="2" class="line"></StackLayout>
           </GridLayout>
           <GridLayout columns="*,auto,*" rows="auto" >
-            <Button col="0" class="google-button">
-              <FormattedString>
-                <!-- <Span text="&#xf1e0;" class="font-awesome"></Span> -->
-                <Span text="Google"></Span>
-              </FormattedString>
-            </Button>
-            <StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
-            <Button col="2" class="facebook-button">
-              <FormattedString>
-                <!-- <Span text="&#xE5CD;" class="mdiBottomBarIcons"></Span> -->
-                <Span text="Facebook"></Span>
-              </FormattedString>
-            </Button>
+              <Button col="0" class="google-button" ios:style="height: 20%;" >
+                  <FormattedString>
+                    <Span text="Google"></Span>
+                  </FormattedString>
+                </Button>
+                <StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
+                <Button col="2" class="facebook-button" ios:style="height: 20%;">
+                  <FormattedString>
+                    <Span text="Facebook"></Span>
+                  </FormattedString>
+                </Button>
           </GridLayout>
         </StackLayout>
         <StackLayout horizontalAlignment="center" verticalAlignment="bottom" orientation="horizontal" class="text-center">

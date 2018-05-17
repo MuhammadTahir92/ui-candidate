@@ -8,12 +8,9 @@
 				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:3%;" ios:style="margin-bottom:5%;"></TextField>
 				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom"></TextField>
 				<Label text="Forget password" class="forget-password-text" style="margin-top:3%;"  ></Label>
-				<android>
-					<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" style="margin-top:8.6%;"  ></Button>
-				</android>
-				<ios>
-						<Button text="Login" (tap)="onButtonTap()" class="login-button" style="margin-top:8.6%; height: 10%;"  ></Button>
-				</ios>
+					
+				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%;" ios:style="margin-top:8.6%; height: 10%;"   ></Button>
+				
 				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:4.5%; margin-bottom:4.5% ">
 					<StackLayout col="0" class="line"></StackLayout>
 					<Label col="1" text="OR LOGIN WITH SOCIAL" class="social-media-text" style="margin-left: 2; margin-right: 2"></Label>

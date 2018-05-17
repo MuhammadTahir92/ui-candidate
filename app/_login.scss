@@ -21,7 +21,7 @@
 	@include small-text(400, 13, center);
 }
 .signup-text {
-	@include small-text(500, 14, center);
+	@include small-text(500, auto, center);
 }
 
 @mixin round-button($border-radius, $background-color) {

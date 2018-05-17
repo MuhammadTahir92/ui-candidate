@@ -1,70 +1,51 @@
 @import 'variables';
 
-.marginPage {
+.margin-page {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 7%;
 	margin-bottom: 5%;
 }
 
-
-.forgetPassword {
+@mixin small-text($font-weight, $font-size , $text-align) {
+	font-weight: $font-weight;
+	font-size: $font-size;
 	color: $color_mountain_mist_approx;
-	text-align: right;
-	padding-top: 4%;
-	font-size: 12;
-	font-weight: 500;
-}
-
-@mixin round-button($radius) {
-			border-radius: $radius;
+	text-align: $text-align;
   }
 
-.socialMedia {
-	color: $color_mountain_mist_approx;
-	text-align: center;
-	margin-left: 2;
-	margin-right: 2;
-	font-size: 12;
+.forget-password-text {
+	@include small-text(500, 13, right);
+}
+.social-media-text {
+	@include small-text(400, 14, center);
+}
+.signup-text {
+	@include small-text(500, 14, center);
 }
 
-
-
-.sizeBtn {
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 40%;
+@mixin round-button($border-radius, $background-color) {
+	border-radius: $border-radius;
+	background-color: $background-color;
 	color: $white;
-	// height: 30%;
 }
-.loginBtn {
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 40%;
-	color: $white;
-	height: 35%;
-	width: 100%;
-}
-.google {
-	background-color: $color_valencia_approx;
-	font-size: 14;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 40%;
-}
-.facebook {
-	background-color: $color_cerulean_blue_approx;
-	font-size: 14;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 40%;
-}
+
+.loginButton { @include round-button($button-border-radius, $color_ebony_clay_approx); }
+.googleButton { @include round-button($button-border-radius, $color_valencia_approx); }
+.facebookButton { @include round-button($button-border-radius, $color_cerulean_blue_approx); }
+
 .line {
 	background-color: $color_mountain_mist_approx;
 	height: 1;
 }
-.signUP {
+
+.signup-link {
 	color: $color_ebony_clay_approx;
 	border-bottom-width: 1;
 	border-bottom-color: $color_ebony_clay_approx;
 }
-.textField {
+
+.text-field {
 	border-bottom-color: $color_mountain_mist_approx;
 	border-bottom-width: 1;
 	placeholder-color: $color_chicago_approx;

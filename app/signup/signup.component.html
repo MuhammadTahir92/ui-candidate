@@ -5,9 +5,9 @@
     </StackLayout>
     <GridLayout row="1" rows="*,auto" columns="*" style="margin-top:12%;">
       <StackLayout>
-        <TextField [(ngModel)]="textFieldValue" hint="Name" class="text-field-custom" android:style="margin-bottom:5%;" ios:style="margin-bottom:8%;"></TextField>
-        <TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:5%;"
-          ios:style="margin-bottom:8%;"></TextField>
+        <TextField [(ngModel)]="textFieldValue" hint="Name" class="text-field-custom" android:style="margin-bottom:6%;" ios:style="margin-bottom:9%;"></TextField>
+        <TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:6%;"
+          ios:style="margin-bottom:9%;"></TextField>
         <TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom" android:style="margin-bottom:1%;" ios:style="margin-bottom:4%;"></TextField>
 
         <Button text="CREATE NEW ACCOUNT" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%;" ios:style="margin-top:8.6%; height: 12%;"></Button>
@@ -17,13 +17,13 @@
           <StackLayout col="2" class="line"></StackLayout>
         </GridLayout>
         <GridLayout columns="*,auto,*" rows="auto">
-          <Button col="0" class="google-button" ios:style="height: 25%;">
+          <Button col="0" class="google-button" ios:style="height: 40%;">
             <FormattedString>
               <Span text="Google"></Span>
             </FormattedString>
           </Button>
           <StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
-          <Button col="2" class="facebook-button" ios:style="height: 25%;">
+          <Button col="2" class="facebook-button" ios:style="height: 40%;">
             <FormattedString>
               <Span text="Facebook"></Span>
             </FormattedString>

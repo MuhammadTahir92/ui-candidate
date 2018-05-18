@@ -5,7 +5,7 @@
 		</StackLayout>
 		<GridLayout row="1" rows="*" columns="*" style="margin-top:12%;">
 			<StackLayout>
-				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:5%;" ios:style="margin-bottom:8%;"></TextField>
+				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:6%;" ios:style="margin-bottom:9%;"></TextField>
 				 
 				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom"></TextField>
 				<Label text="Forget password" class="forget-password-text" [nsRouterLink]="['/forget']" pageTransition="SlideLeft" style="margin-top:3%;"></Label>
@@ -16,13 +16,15 @@
 					<StackLayout col="2" class="line"></StackLayout>
 				</GridLayout>
 				<GridLayout columns="*,auto,*" rows="auto">
-					<Button col="0" class="google-button" ios:style="height: 25%;">
+					<Button col="0" class="google-button" ios:style="height: 30%;">
 						<FormattedString>
 							<Span text="Google"></Span>
 						</FormattedString>
 					</Button>
+
 					<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
-					<Button col="2" class="facebook-button" ios:style="height: 25%;">
+					
+					<Button col="2" class="facebook-button" ios:style="height: 30%;">
 						<FormattedString>
 							<Span text="Facebook"></Span>
 						</FormattedString>

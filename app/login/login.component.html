@@ -1,14 +1,19 @@
-<StackLayout backgroundColor="#F3F3F3">
+<StackLayout backgroundColor="#F3F3F3" >
 	<GridLayout rows="*,5*,40%" columns="*" class="margin-page">
 		<StackLayout>
 			<Image src="res://logogoat" width="140%" height="140%"></Image>
 		</StackLayout>
-		<GridLayout row="1" rows="*" columns="*" style="margin-top:12%;">
+		<GridLayout row="1" rows="*" columns="*" style="margin-top:10%;" >
 			<StackLayout>
-				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:3%;"
-				 ios:style="margin-bottom:5%;"></TextField>
-				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom"></TextField>
-				<Label text="Forget password" class="forget-password-text" [nsRouterLink]="['/forget']" pageTransition="SlideRight" style="margin-top:3%;"></Label>
+				<GridLayout rows="auto,5%,auto" columns="*">
+					<Label row="0"  [visibility]="textFieldOne ? 'visible' : 'collapsed'" text="Email Address" textWrap="true" class="hintText" style="margin-top:5%; margin-left:1%;"></Label>
+					<TextField row="0"  (focus)="onFocusTextone($event)" (textChange)="onTextChangeOne($event)" (blur)="onblurTextone($event)"  [(ngModel)]="textFieldValue" hint="" class="text-field-custom" android:style="margin-bottom:3%;"
+					ios:style="margin-bottom:5%;"></TextField>
+					
+					<Label row="2" [visibility]="textFieldTwo ? 'visible' : 'collapsed'" text="Password" textWrap="true" class="hintText" style="margin-top:5%; margin-left:1%;"></Label>
+					<TextField row="2"  (focus)="onFocusTexttwo($event)" (textChange)="onTextChangeTwo($event)" (blur)="onblurTexttwo($event)" [(ngModel)]="textFieldValue" hint="" class="text-field-custom"></TextField>
+				</GridLayout>
+				<Label text="Forget password" class="forget-password-text" [nsRouterLink]="['/forget']" pageTransition="SlideLeft" style="margin-top:3%;"></Label>
 				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%;" ios:style="margin-top:8.6%; height: 10%;"></Button>
 				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:4.5%; margin-bottom:4.5% ">
 					<StackLayout col="0" class="line"></StackLayout>
@@ -16,13 +21,13 @@
 					<StackLayout col="2" class="line"></StackLayout>
 				</GridLayout>
 				<GridLayout columns="*,auto,*" rows="auto">
-					<Button col="0" class="google-button" ios:style="height: 20%;">
+					<Button col="0" class="google-button"   ios:style="height: 20%;">
 						<FormattedString>
 							<Span text="Google"></Span>
 						</FormattedString>
 					</Button>
 					<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
-					<Button col="2" class="facebook-button" ios:style="height: 20%;">
+					<Button col="2" class="facebook-button"   ios:style="height: 20%;">
 						<FormattedString>
 							<Span text="Facebook"></Span>
 						</FormattedString>

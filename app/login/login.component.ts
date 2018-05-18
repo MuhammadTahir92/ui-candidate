@@ -11,42 +11,51 @@ export class LoginComponent implements OnInit {
 
   constructor(private _page: Page) { }
 
-  textFieldOne: boolean = true;
-  textFieldTwo: boolean = true;
-  firstTx: string ;
+  // textFieldOne: boolean = true;
+  // textFieldTwo: boolean = true;
+  // firstTx: string ;
   ngOnInit() {
     this._page.actionBarHidden = true;
   }
 
-  onFocusTextone(args) {
-    this.textFieldOne = false;
-  }
+  // onReturnPress(args) {
+  //   let textField = <TextField>args.object;
+  //   this.firstTx = textField.text;
 
-  onblurTextone(args) {
-    let textField = <TextField>args.object;
-    this.firstTx.length >=1 ? this.textFieldOne = false : this.textFieldOne = true;
-  }
-  
-  onFocusTexttwo(args) {
-    this.textFieldTwo = false;
-  }
-  
-  onblurTexttwo(args) {
-    let textField = <TextField>args.object;
-    this.firstTx.length >=1 ? this.textFieldTwo = false : this.textFieldTwo = true;
-  }
-  
-  
-  public onTextChangeOne(args) {
-    let textField = <TextField>args.object;
-    this.firstTx = textField.text;
-    this.firstTx.length >=1 ? this.textFieldOne = false : this.textFieldOne = true;
-  }
 
-  public onTextChangeTwo(args) {
-    let textField = <TextField>args.object;
-    this.firstTx = textField.text;
-    this.firstTx.length >=1 ? this.textFieldTwo = false : this.textFieldTwo = true;
-  }
+  // }
+
+  // onFocusTextone(args) {
+  //   this.textFieldOne = false;
+  // }
+
+  // onblurTextone(args) {
+  //   let textField = <TextField>args.object;
+  //   this.firstTx = textField.text;
+  //   this.firstTx.length >=1 ? this.textFieldOne = false : this.textFieldOne = true;
+  // }
+  
+  // onFocusTexttwo(args) {
+  //   this.textFieldTwo = false;
+  // }
+  
+  // onblurTexttwo(args) {
+  //   let textField = <TextField>args.object;
+  //   this.firstTx = textField.text;
+  //   this.firstTx.length >=1 ? this.textFieldTwo = false : this.textFieldTwo = true;
+  // }
+  
+  
+  // public onTextChangeOne(args) {
+  //   let textField = <TextField>args.object;
+  //   this.firstTx = textField.text;
+  //   this.firstTx.length >=1 ? this.textFieldOne = false : this.textFieldOne = true;
+  // }
+
+  // public onTextChangeTwo(args) {
+  //   let textField = <TextField>args.object;
+  //   this.firstTx = textField.text;
+  //   this.firstTx.length >=1 ? this.textFieldTwo = false : this.textFieldTwo = true;
+  // }
 
 }

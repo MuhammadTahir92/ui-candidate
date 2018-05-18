@@ -10,7 +10,7 @@
 				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom"></TextField>
 				<Label text="Forget password" class="forget-password-text" [nsRouterLink]="['/forget']" pageTransition="SlideLeft" style="margin-top:3%;"></Label>
 			
-				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%;" ios:style="margin-top:8.6%; height: 12%;"></Button>	
+				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%; font-size:16" ios:style="margin-top:8.6%; height: 12%;font-size:16"></Button>	
 				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:4.5%; margin-bottom:4.5% ">
 					<StackLayout col="0" class="line"></StackLayout>
 					<Label col="1" text="OR LOGIN WITH SOCIAL" class="social-media-text" style="margin-left: 2; margin-right: 2"></Label>
@@ -18,7 +18,7 @@
 				</GridLayout>
 				<GridLayout columns="*,auto,*" rows="auto">
 					
-					<Button col="0" class="google-button" ios:style="height: 30%;">
+					<Button col="0" class="google-button" android:style="font-size:14;" ios:style="height: 30%;font-size:14">
 						<FormattedString>
 							<Span text="Google"></Span>
 						</FormattedString>
@@ -26,7 +26,7 @@
 
 					<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
 
-					<Button col="2" class="facebook-button" ios:style="height: 30%;">
+					<Button col="2" class="facebook-button"  android:style="font-size:14;" ios:style="height: 30%;font-size:14;">
 						<FormattedString>
 							<Span text="Facebook"></Span>
 						</FormattedString>

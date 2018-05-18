@@ -13,6 +13,4 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
     this._page.actionBarHidden = true;
   }
-
-
 }

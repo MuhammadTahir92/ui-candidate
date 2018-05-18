@@ -18,7 +18,12 @@ export class ForgetPasswordComponent implements OnInit {
 
   public gobackTologin() {
     console.log("working in goback function");
-    this.routerExtensions.back();
+    this.routerExtensions.navigate(["/login"],{
+      transition: {
+        name: "SlideRight",
+        curve: "linear"
+    }
+    });
   }
 
 

@@ -12,8 +12,6 @@ import { LoginComponent } from "~/login/login.component";
 // import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { SignupComponent } from './signup/signup.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
-import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
-
 
 @NgModule({
     bootstrap: [

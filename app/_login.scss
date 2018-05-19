@@ -48,12 +48,6 @@
 .text-field-custom {
 	border-bottom-color: $color_mountain_mist_approx;
 	border-bottom-width: 1;
-	placeholder-color: $color_mountain_mist_approx;
+	placeholder-color: $hint_color;
 	font-size:14; 
-}
-
-.hintText 
-{
-	color: $color_mountain_mist_approx;
-	font-weight: bold;
 }

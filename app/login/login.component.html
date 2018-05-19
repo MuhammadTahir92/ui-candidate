@@ -1,42 +1,44 @@
 <StackLayout backgroundColor="#F3F3F3">
 	<GridLayout rows="*,5*,40%" columns="*" class="margin-page">
 		<StackLayout>
-			<Image src="res://logogoat" width="140%" height="140%"></Image>
+			<Image src="res://logogoat" width="150%" height="150%"></Image>
 		</StackLayout>
-		<GridLayout row="1" rows="*" columns="*" style="margin-top:12%;">
+		<GridLayout row="1" rows="*" columns="*" style="margin-top:10%;">
 			<StackLayout>
-				<TextField [(ngModel)]="textFieldValue" hint="Email Address" class="text-field-custom" android:style="margin-bottom:6%;"
+				<TextField [(ngModel)]="textFieldValue" keyboardType="email" hint="Email Address" class="text-field-custom" android:style="margin-bottom:6%;"
 				 ios:style="margin-bottom:9%;"></TextField>
-				<TextField [(ngModel)]="textFieldValue" hint="Password" class="text-field-custom"></TextField>
-				<Label text="Forget password" class="forget-password-text" [nsRouterLink]="['/forget']" pageTransition="SlideLeft" style="margin-top:3%;"></Label>
-			
-				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%; font-size:16" ios:style="margin-top:8.6%; height: 12%;font-size:16"></Button>	
+				<TextField [(ngModel)]="textFieldValue" hint="Password" secure="true" class="text-field-custom"></TextField>
+				<Label text="Forget Password" class="forget-password-text " [nsRouterLink]="['/forget']" pageTransition="SlideLeft" style="margin-top:3%;"></Label>
+
+				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button" android:style="margin-top:8.6%; font-size:16;height:13%"
+				 ios:style="margin-top:8.6%; height: 12%;font-size:16"></Button>
 				<GridLayout columns="*,auto,*" rows="auto" style="margin-top:4.5%; margin-bottom:4.5% ">
 					<StackLayout col="0" class="line"></StackLayout>
-					<Label col="1" text="OR LOGIN WITH SOCIAL" class="social-media-text" style="margin-left: 2; margin-right: 2"></Label>
+					<Label col="1" text="OR LOGIN WITH SOCIAL" class="social-media-text" style="margin-left: 1.5%; margin-right: 1.5%"></Label>
 					<StackLayout col="2" class="line"></StackLayout>
 				</GridLayout>
 				<GridLayout columns="*,auto,*" rows="auto">
-					
-					<Button col="0" class="google-button" android:style="font-size:14;" ios:style="height: 30%;font-size:14">
-						<FormattedString>
-							<Span text="Google"></Span>
-						</FormattedString>
-					</Button>
+
+					<GridLayout col="0" rows="*" columns="*,*">
+						<Label col="0" text="&#xea8b;" class="icomoon social-icon-Button googleFontSize" ></Label>
+						<Button col="0" colSpan="2" class="google-button" text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google" android:style="font-size:12;z-index:0;"
+						 ios:style="height: 30%;font-size:14;z-index:0;"> </Button>
+					</GridLayout>
+
+					<GridLayout col="2" rows="*" columns="*,*">
+						<Label col="0" text="&#xea90;" class="icomoon social-icon-Button facebookFontSize" ></Label>
+						<Button col="0" colSpan="2" class="facebook-button" text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook" android:style="font-size:12;z-index:0;"
+						 ios:style="height: 30%;font-size:14;z-index:0;"> </Button>
+					</GridLayout>
+
 
 					<StackLayout col="1" style="margin-left:3;margin-right:3"></StackLayout>
-
-					<Button col="2" class="facebook-button"  android:style="font-size:14;" ios:style="height: 30%;font-size:14;">
-						<FormattedString>
-							<Span text="Facebook"></Span>
-						</FormattedString>
-					</Button>
 				</GridLayout>
 			</StackLayout>
 		</GridLayout>
 		<StackLayout row="2" style="min-height: 70%;" horizontalAlignment="center" verticalAlignment="bottom" orientation="horizontal"
 		 class="text-center">
-			<Label text="Have an account? " verticalAlignment="bottom" class="signup-text"></Label>
+			<Label text="Don't have an account? " verticalAlignment="bottom" class="signup-text"></Label>
 			<Label text="SIGN UP" fontWeight="Bold" verticalAlignment="bottom" [nsRouterLink]="['/signup']" pageTransition="fade" class="signup-link"></Label>
 		</StackLayout>
 	</GridLayout>

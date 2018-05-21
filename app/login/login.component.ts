@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from "ui/page";
-import { TextField } from "ui/text-field";
 
 @Component({
   selector: 'app-login',

@@ -10,6 +10,8 @@
 
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
+
+@import 'variables';
 .icomoon {
     font-family: 'icomoon';
   
@@ -32,3 +34,65 @@
  {
     font-size: 18;
  }
+
+ 
+.margin-page {
+	margin-left: 11%;
+	margin-right: 11%;
+	margin-top: 8%;
+	margin-bottom: 5%;
+}
+
+@mixin small-text($font-weight, $font-size , $text-align) {
+	font-weight: $font-weight;
+	font-size: $font-size;
+	color: $color_mountain_mist_approx;
+	text-align: $text-align;
+  }
+
+  .forget-password-text {
+	@include small-text(500, 12, right);
+}
+.social-media-text {
+	@include small-text(400, 12, center);
+}
+.signup-text {
+	@include small-text(500, auto, center);
+}
+
+
+@mixin round-button($border-radius, $background-color) {
+	border-radius: $border-radius;
+	background-color: $background-color;
+	color: $white;
+}
+
+.login-button { @include round-button($button-border-radius, $color_ebony_clay_approx); }
+.google-button { @include round-button($button-border-radius, $color_valencia_approx); }
+.facebook-button { @include round-button($button-border-radius, $color_cerulean_blue_approx); }
+
+
+.signup-link {
+	color: $color_ebony_clay_approx;
+	border-bottom-width: 1;
+	border-bottom-color: $color_ebony_clay_approx;
+	border-style: double;
+}
+
+
+.text-field-custom {
+	border-bottom-color: $color_mountain_mist_approx;
+	border-bottom-width: 1;
+	placeholder-color: $hint_color;
+	font-size:14; 
+	font-weight: 500;
+}
+
+.marginTop10 { margin-top:10%; }
+.marginTop4 { margin-top:4%; }
+.fontSize16 { font-size:16; }
+.marginTopClass { margin-top: 4.5%;  } 
+.marginButtomClass { margin-bottom: 4.5%; }
+.marginleftTwo  {  margin-left: 2%;   } 
+.marginRightTwo { margin-right: 2%;  }
+.zIndexZero { z-index: 0; }

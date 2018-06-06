@@ -2,7 +2,6 @@
 @import '~nativescript-theme-core/scss/platforms/index.ios';
 
 @import 'variables';
-@import './login/ios._login';
 // Place any CSS rules you want to apply only on iOS here
 
 
@@ -63,15 +62,15 @@
 }
 .marginTop10 { margin-top:10%; }
 .marginTop4 { margin-top:4%; }
-.androidSpac6 { margin-bottom:6%; }
-.marginNine { margin-top: 9.2%; }
+.androidSpac6 { margin-bottom:9%; }
+.marginNine { margin-top: 8.6%; }
 .fontSize16 { font-size:16; }
-.height13 { height:13% }
+.height13 { height:12% }
 .marginTopClass { margin-top: 4.5%;  } 
 .marginButtomClass { margin-bottom: 4.5%; }
 .marginleftTwo  {  margin-left: 2%;   } 
 .marginRightTwo { margin-right: 2%;  }
 .leftFive { margin-left: .5; }
 .rightFive { margin-right: .5; }
-.fontSizeTwelve { font-size: 12; } 
+.fontSizeTwelve { font-size: 14; } 
 .zIndexZero { z-index: 0; }

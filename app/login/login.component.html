@@ -1,43 +1,52 @@
 <StackLayout backgroundColor="#F3F3F3">
-	<GridLayout rows="*,5*,38%" columns="*" class="margin-page">
+
+	
+	<GridLayout rows="*,5*,7%" columns="*" class="margin-page">
 		<StackLayout>
-			<Image src="res://logogoat" width="180%" height="180%"></Image>
+			<Image src="res://logogoat" width="97%" height="97%"></Image>
 		</StackLayout>
-
-		<GridLayout row="1" rows="*" columns="*" class="marginTop10">
-			<StackLayout>
-				<TextField [(ngModel)]="textFieldValue" keyboardType="email" hint="Email Address" class="text-field-custom " ios:style="margin-bottom:9%;"></TextField>
-				<TextField [(ngModel)]="textFieldValue" hint="Password" secure="true" class="text-field-custom"></TextField>
-				<Label text="Forget Password" class="forget-password-text marginTop4 " [nsRouterLink]="['/forget']" pageTransition="SlideLeft"></Label>
-
-				<Button text="LOGIN" (tap)="onButtonTap()" class="login-button  fontSize16  " ios:style="margin-top: 8.6%;height:12%"></Button>
-				<GridLayout columns="*,auto,*" rows="auto" class="marginTopClass marginButtomClass">
-					<StackLayout col="0" class="line"></StackLayout>
-					<Label col="1" text="OR LOGIN WITH SOCIAL" class="social-media-text leftFive rightFive" ios:style="margin-left: .5; margin-right: .5;"></Label>
-					<StackLayout col="2" class="line"></StackLayout>
-				</GridLayout>
-
-				<GridLayout columns="*,auto,*" rows="auto">
-					<GridLayout col="0" rows="*" columns="*,*">
-						<Label col="0" text="&#xea8b;" class="icomoon social-icon-Button googleFontSize"></Label>
-						<Button col="0" colSpan="2" text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google" ios:style="font-size: 14;" class="google-button fontSizeTwelve zIndexZero"
-						 ios:style="height: 45;"> </Button>
-					</GridLayout>
-
-					<GridLayout col="2" rows="*" columns="*,*">
-						<Label col="0" text="&#xea90;" class="icomoon social-icon-Button facebookFontSize"></Label>
-						<Button col="0" colSpan="2" text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook"
-						 class="facebook-button fontSizeTwelve zIndexZero" ios:style="height: 45;"> </Button>
-					</GridLayout>
-
-
-					<StackLayout col="1" class="marginleftTwo marginRightTwo"></StackLayout>
+		<GridLayout row="1" rows="auto,*,*" columns="*" class="login-margin-top">
+			<StackLayout row="0">
+				<GridLayout rows="auto,13%,auto" class="form">
+					<TextField row="0" [(ngModel)]="textFieldValue" keyboardType="email" hint="EMAIL" class="text-field-custom"></TextField>
+					<TextField row="2" [(ngModel)]="textFieldValue" hint="PASSWORD" secure="true" class="text-field-custom"></TextField>
+					<Label text="FORGET ?" row="2" class="forget-Password text-right" verticalAlignment="middle"></Label>
 				</GridLayout>
 			</StackLayout>
+			<GridLayout row="1" rows="*,*" class="login-button-margin">
+				<StackLayout class="login-button-height">
+					<Button text="LOGIN" (tap)="onButtonTap()" class="login-button  fontSize16"></Button>
+				</StackLayout>
+
+				<GridLayout row="1" columns="*,9%,auto,9%,*" rows="auto" class="login-margin-top">
+					<StackLayout col="0" class="line"></StackLayout>
+					<Label col="2" text="OR LOGIN WITH SOCIAL" class="social-media-text text-center"></Label>
+					<StackLayout col="4" class="line"></StackLayout>
+				</GridLayout>
+			</GridLayout>
+
+			<GridLayout row="2" rows="*" columns="*,10%,*" class="negative-margin">
+				<GridLayout col="0" rows="*" columns="*"  class="google-button  button-sizes  social-icon-button-height" verticalAlignment="top">
+					<Label text="&#xea8b;" class="icomoon  googleFontSize" verticalAlignment="middle" ></Label>
+					<Label text="Google" class="google-button-text" verticalAlignment="middle" ></Label>
+				</GridLayout>
+				<GridLayout col="2" rows="*" columns="*"  class="facebook-button button-sizes  social-icon-button-height" verticalAlignment="top">
+						<Label text="&#xea90;" class="icomoon  facebookFontSize" verticalAlignment="middle" ></Label>
+						<Label text="Facebook" class="google-button-text" verticalAlignment="middle" ></Label>
+					</GridLayout>
+			</GridLayout>
+			<GridLayout row="2" horizontalAlignment="center" verticalAlignment="bottom">
+
+				<StackLayout orientation="horizontal" class="text-center" class="signup-link-margin">
+					<Label text="Don't have an account?  " verticalAlignment="bottom" class="signup-text"></Label>
+					<Label text="SIGN UP" fontWeight="Bold" verticalAlignment="bottom" [nsRouterLink]="['/signup']" pageTransition="fade" class="signup-link"></Label>
+				</StackLayout>
+				<Label text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" horizontalAlignment="right"
+				 verticalAlignment="bottom" class="signup-link"></Label>
+			</GridLayout>
+
 		</GridLayout>
-		<StackLayout row="2" horizontalAlignment="center" verticalAlignment="bottom" orientation="horizontal" class="text-center">
-			<Label text="Don't have an account? " verticalAlignment="bottom" class="signup-text"></Label>
-			<Label text="SIGN UP" fontWeight="Bold" verticalAlignment="bottom" [nsRouterLink]="['/signup']" pageTransition="fade" class="signup-link"></Label>
-		</StackLayout>
+
 	</GridLayout>
+	
 </StackLayout>

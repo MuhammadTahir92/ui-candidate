@@ -12,7 +12,7 @@ import { LoginComponent } from "~/login/login.component";
 // import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { SignupComponent } from './signup/signup.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
-
+import { NgShadowModule } from 'nativescript-ng-shadow';
 @NgModule({
     bootstrap: [
         AppComponent
@@ -20,6 +20,7 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     imports: [
         NativeScriptModule,
         AppRoutingModule,
+        NgShadowModule
     ],
     declarations: [
         AppComponent,

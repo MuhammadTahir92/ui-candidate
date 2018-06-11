@@ -7,7 +7,7 @@
 		</StackLayout>
 		<GridLayout row="1" rows="auto,*,*" columns="*" class="login-margin-top">
 			<StackLayout row="0">
-				<GridLayout rows="auto,13%,auto" class="form">
+				<GridLayout rows="auto,17%,auto" class="form">
 					<TextField row="0" [(ngModel)]="textFieldValue" keyboardType="email" hint="EMAIL" class="text-field-custom"></TextField>
 					<TextField row="2" [(ngModel)]="textFieldValue" hint="PASSWORD" secure="true" class="text-field-custom"></TextField>
 					<Label text="FORGET ?" row="2" class="forget-Password text-right" verticalAlignment="middle"></Label>
@@ -18,7 +18,7 @@
 					<Button text="LOGIN" (tap)="onButtonTap()" class="login-button  fontSize16"></Button>
 				</StackLayout>
 
-				<GridLayout row="1" columns="*,9%,auto,9%,*" rows="auto" class="login-margin-top">
+				<GridLayout row="1" columns="*,9%,auto,9%,*" rows="auto" class="login-margin-top-textfied">
 					<StackLayout col="0" class="line"></StackLayout>
 					<Label col="2" text="OR LOGIN WITH SOCIAL" class="social-media-text text-center"></Label>
 					<StackLayout col="4" class="line"></StackLayout>
@@ -38,7 +38,7 @@
 			<GridLayout row="2" horizontalAlignment="center" verticalAlignment="bottom">
 
 				<StackLayout orientation="horizontal" class="text-center" class="signup-link-margin">
-					<Label text="Don't have an account?  " verticalAlignment="bottom" class="signup-text"></Label>
+					<Label text="Don't have an account? " verticalAlignment="bottom" class="signup-text"></Label>
 					<Label text="SIGN UP" fontWeight="Bold" verticalAlignment="bottom" [nsRouterLink]="['/signup']" pageTransition="fade" class="signup-link"></Label>
 				</StackLayout>
 				<Label text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" horizontalAlignment="right"

@@ -17,149 +17,112 @@
   
  }
 
-.margin-page {
-	margin-left: 10.5%;
-	margin-right: 10.5%;
-	margin-top: 7%;
-	margin-bottom: 5%;
-}
-
-
-.text-field-custom {
-	// border-bottom-color: #969595;
-	// border-bottom-width: 1;
-	placeholder-color: #595959;
-	font-size:13; 
-	font-weight: 300;
-}
-
-
-.login-button { 	
-    border-radius: 40%;
-	background-color: #232B41;
-	color: #ffffff;   
-	font-size: 9;
-	font-weight: 300; 
-}
-
-.google-button {
-	background-color: #DC4E41;
-	padding-left: 24%;
-	padding-right: 31%;
-}
-
-.button-sizes
-{
-	border-radius: 35%;
-	color: #ffffff;    
-	
-}
-
-
-.facebook-button {
-	background-color: #2553B4;
-	padding-left: 17%;
-	padding-right: 27%;
-}
-
-.google-button-text {
-	font-size:13;
-	font-weight: 500;
-	text-align: right;
-	margin-bottom: 5%;
-}
-
-.fontSize16 { font-size:16; }
-
-.line {
-	background-color: #d9d9d9;
-	height: 0.9;
-}
-.social-media-text {
-    font-size: 12;
-    color:#999999; 
-}
-
-.social-icon-Button
- {
-     color: white;
+ .margin-page {
+	 margin-left: 10.5%;
+	 margin-right: 10.5%;
+	 margin-top: 7%;
+	 margin-bottom: 5%;
  }
-
-
+ .text-field-custom {
+	 // border-bottom-color: #969595;
+	 // border-bottom-width: 1;
+	 placeholder-color: #595959;
+	 font-size: 13;
+	 font-weight: 300;
+ }
+ .login-button {
+	 border-radius: 40%;
+	 background-color: $background_color_1;
+	 color: $color_1;
+	 font-size: 9;
+	 font-weight: 300;
+ }
+ .google-button {
+	 background-color: $background_color_2;
+	 padding-left: 24%;
+	 padding-right: 31%;
+ }
+ .button-sizes {
+	 border-radius: 35%;
+	 color: $color_1;
+ }
+ .facebook-button {
+	 background-color: $background_color_3;
+	 padding-left: 17%;
+	 padding-right: 27%;
+ }
+ .google-button-text {
+	 font-size: 13;
+	 font-weight: 500;
+	 text-align: right;
+	 margin-bottom: 5%;
+ }
+ .fontSize16 {
+	 font-size: 16;
+ }
+ .line {
+	 background-color: $background_color_4;
+	 height: 0.9;
+ }
+ .social-media-text {
+	 font-size: 12;
+	 color: $color_2;
+ }
+ .social-icon-Button {
+	 color: $color_3;
+	 color: $color_3;
+	 z-index: 1;
+	 text-align: center;
+	 vertical-align: middle;
+ }
  .signup-text {
-	 color:#999999; 
+	 color: $color_2;
 	 font-weight: 500;
 	 font-size: 14;
  }
- 
  .signup-link {
-	color: #232B41;
-	border-bottom-width: 0.6;
-	border-bottom-color: #232B41;
-	border-style: double;
-	font-size:13; 
-}
-
-.forget-Password
-{
-    font-size: 10;
-    font-weight: 400;
-	font-style: italic;
-	color: #3e4149;
-}
-
-
-.social-icon-Button
-{
-	color: white;
-	z-index:1;
-	text-align: center; 
-	vertical-align: middle;
-}
-
-.googleFontSize
-{
-   font-size: 20;
-   text-align: left;
-}
-
- .facebookFontSize
- {
-    font-size: 16;
+	 color: $color_4;
+	 border-bottom-width: 0.6;
+	 border-bottom-color: $border_bottom_color_1;
+	 border-style: double;
+	 font-size: 13;
  }
-
- .negative-margin
- {
-	margin-top: -13;
+ .forget-Password {
+	 font-size: 10;
+	 font-weight: 400;
+	 font-style: italic;
+	 color: $color_5;
  }
-
-
+ .googleFontSize {
+	 font-size: 20;
+	 text-align: left;
+ }
+ .facebookFontSize {
+	 font-size: 16;
+ }
+ .negative-margin {
+	 margin-top: -13;
+ }
  .login-margin-top {
-	margin-top:11.5%;
+	 margin-top: 11.5%;
  }
-
  .login-margin-top-textfied {
-	margin-top:10%;
+	 margin-top: 10%;
  }
  .login-button-margin {
-	margin-top:7%;
+	 margin-top: 7%;
  }
  .login-button-height {
-	height:36.3%;
+	 height: 36.3%;
  }
-
  .social-icon-button-height {
-	height: 27.4%;	 
-
-}
-
-.signup-link-margin
-{
-	margin-bottom: 0.8%;
-}
-
-.icon-button
-{
-	text-transform: capitalize;
-	text-align: right;
-}
+	 height: 27.4%;
+ }
+ .signup-link-margin {
+	 margin-bottom: 0.8%;
+ }
+ .icon-button {
+	 text-transform: capitalize;
+	 text-align: right;
+ }
+ 

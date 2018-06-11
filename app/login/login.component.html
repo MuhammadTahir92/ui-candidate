@@ -9,9 +9,8 @@
 			<StackLayout row="0">
 				<GridLayout rows="auto,auto,auto" class="form">
 					<TextField row="0" [(ngModel)]="textFieldValue" keyboardType="email" hint="EMAIL" class="text-field-custom"></TextField>
-					<StackLayout row="1" style="height: 35%;">
+					<StackLayout row="1" class="space-textfield">
 						<Label text="&nbsp;" textWrap="true"></Label>
-						
 					</StackLayout>
 					<TextField row="2" [(ngModel)]="textFieldValue" hint="PASSWORD" secure="true" class="text-field-custom"></TextField>
 					<Label text="FORGET ?" row="2" class="forget-Password text-right" verticalAlignment="middle"></Label>
